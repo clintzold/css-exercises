@@ -1,0 +1,11 @@
+.b1 {
+    background-color: rgb(15, 15, 15);
+    color: white;
+}
+.b2{
+    background-color: yellow;
+}
+.b1.b2 {
+    font-size: 28px;
+    font-style: Helvetica, "Times New Roman", sans-serif;
+}
