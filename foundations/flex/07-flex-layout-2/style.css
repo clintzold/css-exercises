@@ -14,6 +14,9 @@ body {
   color: white;
   display: flex;
   align-items: center;
+  font-size: 32px;
+  font-weight: 900;
+  padding-left: 16px;
 }
 
 .footer {
@@ -32,25 +35,46 @@ body {
   max-width: 300px;
   background: royalblue;
   box-sizing: border-box;
+  padding: 16px;
   display: flex;
   flex-direction: column;
-  flex: 1 0 auto;    /*allows container to grow vertically but not shrink horizontally*/
+  flex: 1 0 auto;    /*Allows container to grow vertically but not shrink horizontally*/
+
+  font-size: 24px;
 }
 
+.sidebar a {
+  color: white;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.cardholder{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: start; /*Causes wrapped cards to align in most vertical position*/
+  gap: 20px;
+  padding: 48px;
+}
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
-  
-
+  width: 300px;
+  height: 300px;
+  padding: 10px;
   
 }
 
 .container {
   display: flex;
   flex-direction: row;
-  flex: 1;              /*Fills 'space-between' Flex-Items in body and stretches
-                        sidebar to header and footer*/
+  flex: 1;              /*Allows main-content to fill 'space-between' Flex-Items in Body element
+                         and stretches sidebar to header and footer*/
   
 }
 
